@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Cotesma - Cooperativa Telefónica de San Martín de los Andes</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/dropdowns-enhancement.css">
+
+    <!-- Custom theme -->
+    <link href="css/custom.css" rel='stylesheet' type='text/css'>
+    
+    <!-- BLOQUES ANIMADOS theme -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <!-- Optional theme -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- Tipografias -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700,500,300|Titillium+Web:700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="guia-cotesma" class="bg-guia">
+
+    <header id="header">
+
+        <nav id="menu-ppal" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="navbar-brand">
+                            <a href="guia.html"><img src="images/GuiaCotesma_apaisado.png"></a>
+                            <span class="sr-only">Guia Cotesma - Administrá tu Figuración</span>
+                        </div>
+                    </div><!--/.col-->
+
+                    <div class="col-sm-8 navbar-user">
+                        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">&#9776;
+                        </a>
+                        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+                            <span class="fa fa-user"></span>
+                        </a>
+
+                        <!-- EL MENÚ DESPLEGADO y COLAPSABLE (mobile) PRINCIPAL -->
+                        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+                            <ul class="nav navbar-nav pull-right">
+                                <li class="nav-item nav-item-toggable">
+                                    <a class="nav-link" data-toggle="collapse" href="#search" aria-expanded="false" aria-controls="search"><span class="fa fa-search"></span> &nbsp;&nbsp;Buscar</a>
+                                </li>
+                                <li class="nav-item nav-item-toggable">
+                                    <a class="nav-link scroll-down" href="adm-ingreso.html" target="_blank"><span class="fa fa-list-alt"></span> &nbsp;&nbsp;Publicar</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- EL MENÚ COLAPSABLE (siempre) DEL USUARIO -->
+                        <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom plr-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
+                            <div class="media mt-1">
+                                <div class="media-left">
+                                    <img src="images/face-glover.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <h5 class="media-heading">Clover SRL</h5>
+                                    <h6>clover@gmail.com</h6>
+                                </div>
+                            </div>
+                            <div style="display:none;">
+                                <a href="#" class="dropdown-item text-uppercase">Editar Cuenta</a>
+                                <a href="#admin-panel" class="dropdown-item text-uppercase scroll-down">Ver tus Figuraciones</a>
+                                <a href="#" class="dropdown-item text-uppercase">Crear Figuración</a>
+                                <a href="adm-finsesion.html" class="dropdown-item text-uppercase text-muted">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div><!--/.col-->
+
+                </div><!--/row -->
+            </div><!--/container-->
+        </nav><!--/nav-->
+
+        <div id="search" class="bg-nar">
+            <button type="button" class="close">×</button>
+
+                <form class="form-inline">
+                    <div class="form-group text-center">
+                        <img class="mb-2" src="images/GuiaCotesma_apaisado.png" width="150">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="search" value="" placeholder="¿Qué buscás?" />
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default buscar-toggle"><span class="fa fa-search"></span></button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bajo-form text-center mt-1">
+                        <p>Ingresá un nombre, dirección, teléfono, rubro o profesión</p>
+                        <a href="guia-lista-subrubro.html" class="btn btn-default mt-2 ver-guia">Ver Guía</a>
+                    </div>
+                </form>
+
+                <div id="publicidades" class="visible-md visible-lg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-1.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-2.gif" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </header><!--/header-->
+
+
+    <!-- ///////////////////////////////// Page Content ///////////////////////////////// -->
+    <div class="page-content">
+
+    <!-- BANNERS pegados al Header -->
+    <section class="buscacomercial bg-yell-2 ptb-2 hidden-xs">
+        <div class="container-fluid">
+                <div id="publicidades">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-1.gif" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-3.gif" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-2.gif" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="guia-rubros" class="pb-5">
+
+        <div class="container">
+            <div class="row">
+                    
+                <div class="col-lg-12">
+                    
+                    <!--/////////////////////////// 1ra FILA ///////////////////////////-->
+                    <div class="row">
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-car fa-3x"></span><br>
+                                    AUTOMOTOR</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-bed fa-3x"></span><br>
+                                    ALOJAMIENTO</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-5">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-cube fa-3x"></span><br>
+                                    CONSTRUCCIÓN</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-2">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-leaf fa-3x"></span><br>
+                                    CUIDADO PERSONAL</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-3">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-ticket fa-3x"></span><br>
+                                    ESPARCIMIENTO</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-4">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-cutlery fa-3x"></span><br>
+                                    GASTRONOMÍA</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!--/////////////////////////// 2da FILA ///////////////////////////-->
+                    <div class="row">
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-13">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-home fa-3x"></span><br>
+                                    HOGAR</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-6">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-tag fa-3x"></span><br>
+                                    INDUMENTARIA</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-14">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-institution fa-3x"></span><br>
+                                    INSTITUCIONES</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-7">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-ambulance fa-3x"></span><br>
+                                    MEDICINA y SALUD</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-17">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-wrench fa-3x"></span><br>
+                                    OFICIOS</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-15">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-male fa-3x"></span><br>
+                                    PERSONAS</h5>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!--/////////////////////////// 3ra FILA ///////////////////////////-->
+                    <div class="row">
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-8">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-briefcase fa-3x"></span><br>
+                                    PROFESIONALES</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-9">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-eye fa-3x"></span><br>
+                                    SEGURIDAD</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-10">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-print fa-3x"></span><br>
+                                    SERVICIOS DE COMUNICACIÓN</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-11">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-bus fa-3x"></span><br>
+                                    TRANSPORTE</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-2">
+                            <div class="thumbnail" data-toggle="collapse" data-target="#rubro-12">
+                                <a href="guia-lista-rubro.html" class="rubro-tag">
+                                    <h5 class="text-center"><span class="fa fa-folder-open fa-3x"></span><br>
+                                    VARIOS</h5>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 
+    <section id="newsletter-in" class="bg-grad-verA05 mt-2 pb-5 bl">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h4 class="h3 nomt">¡ENTERATE ANTES!</h4>
+                    <p class="lead">Suscribite al Newsletter de Cotesma y enterate antes de las novedades</p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Tu email" aria-describedby="suscribir">
+                      <span class="input-group-addon" id="suscribir"><span class="fa fa-paper-plane"></span>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+    </section>
+
+
+
+    </div>
+    
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>COTESMA</h4>
+                    <p>Cooperativa Telefónica y Otros Servicios Públicos de San Martín de los Andes</p>
+                </div>
+                <div class="col-md-2">
+                    <h4>NOSOTROS</h4>
+                    <ul class="nav footer-nav">
+                      <li><a href="nosotros.html">La Cooperativa</a></li>
+                      <li><a href="consejo-adm.html">Consejo de Administración</a></li>
+                      <li><a href="cotesma-en-accion.html">Cotesma En Acción</a></li>
+                      <li><a href="#">Recursos Humanos</a></li>
+                      <li><a href="index.html#rscoop">RSCoop</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>SERVICIOS</h4>
+                    <ul class="nav footer-nav">
+                      <li><a href="telefonia-fija.html">Telefonía Fija</a></li>
+                      <li><a href="http://www.nuestro.com.ar" target="_blank">Telefonía Móvil</a></li>
+                      <li><a href="http://www.cotemax.com.ar" target="_blank">Internet</a></li>
+                      <li><a href="servicios.html">Espacio Educativo</a></li>
+                      <li><a href="servicios.html">Espacio Cultural</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>NOVEDADES</h4>
+                    <ul class="nav footer-nav">
+                      <li><a href="novedades.html">Novedades</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>CONTACTANOS</h4>
+                    <div class="bloqd">
+                        <span><i class="icon grs fa fa-globe"></i>Capitán Drury 761, San Martín de los Andes, NQN 8370 Argentina</span>
+                        <span><i class="icon grs fa fa-phone"></i>02972 427000</span>
+                        <span><i class="icon grs fa fa-envelope"></i><a href="contacto.html"><strong>hola@cotesma.com.ar</strong></a></span>
+                    </div>
+                    <ul class="social-presence">
+                        <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>-->
+
+    <div class="container-fluid copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <small>&copy; Cotesma 2015</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENLACES A SITIOS WEB DE COTESMA -->
+    <div id="extralinks">
+        <div class="extra cot">
+            <div class="cont">
+                <img class="icono" src="images/logo-cotesma3.png">
+                <div class="txt">
+                    <a href="http://www.cotesma.com.ar" target="_blank"><h5>COTESMA</h5>
+                    <small>Ir al sitio web</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="extra guia">
+            <div class="cont">
+                <img class="icono" src="images/logo-cec3.png">
+                <div class="txt">
+                    <a href="http://www.cotesma.com.ar" target="_blank"><h5>CENTRO DE ESTUDIOS COTESMA</h5>
+                    <small>Ir al sitio web</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="extra cec">
+            <div class="cont">
+                <img class="icono" src="images/logo-cultura3.png">
+                <div class="txt">
+                    <a href="http://www.cotesma.com.ar" target="_blank"><h5>CENTRO CULTURAL COTESMA</h5>
+                    <small>Ir al sitio web</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="extra ccc">
+            <div class="cont">
+                <img class="icono" style="margin-left:-75px;" src="images/logo-cotemax.png">
+                <div class="txt">
+                    <a href="http://www.cotemax.com.ar" target="_blank"><h5>COTEMAX</h5>
+                    <small>Ir al sitio web</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ///////////////////////////////// FIN Page Content ///////////////////////////////// -->
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/dropdowns-enhancement.js"></script>
+
+    <!-- SCROLL UP -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+
+    <!-- SCROLL DOWN -->
+    <script src="js/main.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- OWL CAROUSELES -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- NOVEDADES ENEFICIOS - CAROUSEL -->
+    <script>
+        $(document).ready(function($) {
+          $("#owl-imagenes").owlCarousel({
+            autoPlay : true,
+            pagination : true,
+            paginationNumbers: false,
+            stopOnHover : true,
+            items : 1,
+            itemsCustom : false,
+            itemsDesktop : [1199,1],
+            itemsDesktopSmall : [980,1],
+            itemsTablet: [768,1],
+            itemsTabletSmall: false,
+            itemsMobile : [479,1]
+           });
+        });
+    </script>
+
+    <!-- BLOQUES ANIMADOS -->
+    <script src="js/jquery.inview.js"></script> 
+    <script type="text/javascript">
+      $(function(){
+          $('div.blocks div').inview({
+              'viewFactor': 0.3
+          });
+      });
+    </script>
+
+</body>
+
+</html>

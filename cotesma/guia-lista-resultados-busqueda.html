@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Cotesma - Cooperativa Telefónica de San Martín de los Andes</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/dropdowns-enhancement.css">
+
+    <!-- Custom theme -->
+    <link href="css/custom.css" rel='stylesheet' type='text/css'>
+    
+    <!-- BLOQUES ANIMADOS theme -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <!-- Optional theme -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- Tipografias -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700,500,300|Titillium+Web:700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="guia-cotesma" class="bg-guia">
+
+    <header id="header">
+
+        <nav id="menu-ppal" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="navbar-brand">
+                            <a href="guia.html"><img src="images/GuiaCotesma_apaisado.png"></a>
+                            <span class="sr-only">Guia Cotesma - Administrá tu Figuración</span>
+                        </div>
+                    </div><!--/.col-->
+
+                    <div class="col-sm-8 navbar-user">
+                        <a class="navbar-toggler hidden-md-up pull-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">&#9776;
+                        </a>
+                        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+                            <span class="fa fa-user"></span>
+                        </a>
+
+                        <!-- EL MENÚ DESPLEGADO y COLAPSABLE (mobile) PRINCIPAL -->
+                        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+                            <ul class="nav navbar-nav pull-right">
+                                <li class="nav-item nav-item-toggable">
+                                    <a class="nav-link" data-toggle="collapse" href="#search" aria-expanded="false" aria-controls="search"><span class="fa fa-search"></span> &nbsp;&nbsp;Buscar</a>
+                                </li>
+                                <li class="nav-item nav-item-toggable">
+                                    <a class="nav-link scroll-down" href="adm-ingreso.html"><span class="fa fa-list-alt"></span> &nbsp;&nbsp;Publicar</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- EL MENÚ COLAPSABLE (siempre) DEL USUARIO -->
+                        <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom plr-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
+                            <div class="media mt-1">
+                                <div class="media-left">
+                                    <img src="images/face-glover.jpg" height="60" width="60" alt="Avatar" class="img-circle">
+                                </div>
+                                <div class="media-body media-middle">
+                                    <h5 class="media-heading">Clover SRL</h5>
+                                    <h6>clover@gmail.com</h6>
+                                </div>
+                            </div>
+                            <div style="display:none;">
+                                <a href="#" class="dropdown-item text-uppercase">Editar Cuenta</a>
+                                <a href="#admin-panel" class="dropdown-item text-uppercase scroll-down">Ver tus Figuraciones</a>
+                                <a href="#" class="dropdown-item text-uppercase">Crear Figuración</a>
+                                <a href="adm-finsesion.html" class="dropdown-item text-uppercase text-muted">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </div><!--/.col-->
+
+                </div><!--/row -->
+            </div><!--/container-->
+        </nav><!--/nav-->
+
+        <div id="search" class="bg-nar">
+            <button type="button" class="close">×</button>
+
+                <form class="form-inline">
+                    <div class="form-group text-center">
+                        <img class="mb-2" src="images/GuiaCotesma_apaisado.png" width="150">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="search" value="" placeholder="¿Qué buscás?" />
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default buscar-toggle"><span class="fa fa-search"></span></button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bajo-form text-center mt-1">
+                        <p>Ingresá un nombre, dirección, teléfono, rubro o profesión</p>
+                        <a href="guia.html" class="btn btn-default mt-2 ver-guia">Ver Guía</a>
+                    </div>
+                </form>
+
+                <div id="publicidades">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-1.gif" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-3.gif" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-2.gif" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+    </header><!--/header-->
+
+
+
+
+    <!-- ///////////////////////////////// Page Content ///////////////////////////////// -->
+    <div class="page-content">
+    
+    <!-- BANNERS pegados al Header -->
+    <section class="buscacomercial bg-yell-2 ptb-2 visible-md visible-lg">
+        <div class="container-fluid">
+                <div id="publicidades">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-1.gif" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-3.gif" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="publicidad text-center">
+                                    <img class="img-responsive" src="images/300x100-2.gif" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="nopt pb-5">
+
+        <div class="container">
+
+            <div id="migadepan" class="row">
+                <div class="col-md-12">
+                    <h2 class="mtb-1">
+                    Resultados para : "Gastronomía"</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="sidebar left">
+
+                        <!--<h4 class="titulo">RUBROS</h4>-->
+
+                        <div class="panel-group categorias-guia" id="accordian"><!--category-productsr-->
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><span class="fa fa-search fa-3x"></span><span class="ml-2">GUÍA</span></h3>
+                                    <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">03</span> Automotor</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">10</span> Alojamiento</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">08</span> Construcción</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">05</span> Cuidado Personal</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">06</span> Esparcimiento</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">09</span> Gastronomía</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">03</span> Hogar</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">10</span> Indumentaria</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">04</span> Instituciones</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">05</span> Medicina y Salud</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">12</span> Oficios</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">03</span> Personas</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">07</span> Profesionales</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">17</span> Seguridad</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">10</span> Servicios de Comunicación</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">05</span> Transporte</a></li>
+                                        <li><a href="guia-lista-subrubro.html"><span class="badge pull-right">34</span> Varios</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div><!--/category-productsr-->
+                    
+                        <!--<div class="brands_products">brands_products
+                            <h2>Brands</h2>
+                            <div class="brands-name">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href=""> <span class="pull-right">(50)</span>Acne</a></li>
+                                    <li><a href=""> <span class="pull-right">(56)</span>Grüne Erde</a></li>
+                                    <li><a href=""> <span class="pull-right">(27)</span>Albiro</a></li>
+                                    <li><a href=""> <span class="pull-right">(32)</span>Ronhill</a></li>
+                                    <li><a href=""> <span class="pull-right">(5)</span>Oddmolly</a></li>
+                                    <li><a href=""> <span class="pull-right">(9)</span>Boudestijn</a></li>
+                                    <li><a href=""> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
+                                </ul>
+                            </div>
+                        </div> /brands_products-->
+                        
+                        <!--<div class="price-range"> price-range
+                            <h2>Price Range</h2>
+                            <div class="well">
+                                 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+                                 <b>$ 0</b> <b class="pull-right">$ 600</b>
+                            </div>
+                        </div> /price-range-->
+                        
+                        <!-- <div class="shipping text-center"> shipping
+                            <img src="images/home/shipping.jpg" alt="" />
+                        </div> /shipping-->
+                        
+                    </div>
+                </div><!--/left-sidebar-->
+                
+                <div class="col-sm-8 lista-comercial">
+                    
+                    <form action="#" method="get" class="mb-1">
+                        <div class="input-group">
+                            <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
+                            <input class="form-control" id="system-search" name="q" placeholder="Buscá por nombre, dirección o teléfono">
+                            <span class="input-group-btn">
+                                <a href="#" type="submit" class="btn btn-default buscar-toggle"><i class="glyphicon glyphicon-search"></i></a>
+                            </span>
+                        </div>
+                    </form>
+
+                    <div class="panel panel-default filterable">
+                    
+                        <table class="table table-list-search">
+                            <tbody>
+
+                                <tr class="comercial-item promovido dos">
+                                    <td>
+                                        <h4><span class="title">Como en Casa</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 429829</small></h4>
+                                        <div class="clearfix"></div>
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">--</span>
+                                        &nbsp; | &nbsp;<span class="tipo"><a href="#">Alquiler de Vajilla</a></span></p>
+                                        <div class="clearfix"></div>                                       
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">Down Town Matías</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 410100</small></h4>
+                                        <div class="clearfix"></div>
+                                        <!--<img class="comercial-logo" alt="clover" src="images/downtownmatias.jpg"/>-->
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Av. San Martín 898</p>
+                                        <div class="clearfix"></div>
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item promovido dos">
+                                    <td>
+                                        <h4><span class="title">Dublin</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 422054</small></h4>
+                                        <div class="clearfix"></div>
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Av. San Martín 884</span>
+                                        &nbsp; | &nbsp;
+                                        <span class="tipo"><a href="#">Pub Irlandés</a></span></p>
+                                        <div class="clearfix"></div>                                       
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">El Regional</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 424589</small></h4>
+                                        <div class="clearfix"></div>
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Av. San Martín 1224</span>
+                                        &nbsp; | &nbsp;
+                                        <span class="tipo"><a href="#">Restaurant Cerevecería</a></span></p>
+                                        <div class="clearfix"></div>                                      
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">Torino Bar & Bistro</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 412614</small></h4>
+                                        <div class="clearfix"></div>
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Perito Moreno 900</span>
+                                        &nbsp; | &nbsp;
+                                        <span class="tipo"><a href="#">Restaurant</a> &nbsp;<a href="#">Bar</a></span></p>                                              
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item promovido cuatro">
+                                    <td>
+                                        <h4><span class="title">Clover</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 410601</small></h4>
+                                        <div class="clearfix"></div>
+                                        <a href="guia-pagina-item.html" target="_blank">
+                                        <img class="comercial-foto pull-right" alt="clover" src="images/glover-banner.jpg"/>
+                                        <img class="comercial-logo pull-right" alt="clover" src="images/glover-00.jpg"/></a>
+
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Mariano Moreno 745</span>
+                                        &nbsp; | &nbsp;
+                                        <span class="tipo"><a href="#">Pub Cerevecería</a></span></p>
+
+                                        <p class="txt">In eget ipsum vitae dolor imperdiet ultrices. Vivamus et diam aliquet orci tristique lobortis in luctus nunc. Lorem ipsum sit.</p>
+
+                                        <ul class="social list-inline">
+                                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                            <li><a href="#"><span class="fa fa-globe"></span> www.clover.com.ar</a></li>
+                                        </ul>
+                                        <a href="guia-pagina-item.html" target="_blank" class="mas" data-toggle="tooltip" data-placement="left" title="Enlace externo"><i class="fa fa-external-link"></i></a>
+                                        <div class="clearfix"></div>                                       
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">Manchester Pub</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 425154</small></h4>
+                                        <div class="clearfix"></div>
+                                        <!--<img class="comercial-logo" alt="clover" src="images/manchester.jpg"/>-->
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Rivadavia 898</span>
+                                        &nbsp; | &nbsp;
+                                        <span class="tipo"><a href="#">Pub Inglés</a></span></p>
+                                        <div class="clearfix"></div>                   
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item promovido tres">
+                                    <td>
+                                        <h4><span class="title">El Cuchitril</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 423790</small></h4>
+                                        <div class="clearfix"></div>
+                                        <img class="comercial-logo pull-right" alt="clover" src="images/cuchitril.jpg"/>
+                                        
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">R, Roca 1020</span>
+                                        &nbsp; | &nbsp;
+                                        <span class="tipo"><a href="#">Resto Bar</a></span></p>
+
+                                        <p class="txt">Vivamus et diam aliquet orci tristique lobortis in luctus nunc. In eget ipsum vitae dolor imperdiet ultrices.</p>
+                                        <ul class="social list-inline">
+                                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                            <li><a href="#"><span class="fa fa-envelope"></span> &nbsp;elcuchitril@gmail.com.ar</a></li>
+                                            <li><a href="#"><span class="fa fa-globe"></span> &nbsp;www.elcuchitril.com.ar</a></li>
+                                        </ul>
+                                        <div class="clearfix"></div>                                         
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">Malabar</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 410558</small></h4>
+                                        <div class="clearfix"></div>
+
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Villegas 1148</span></p>                                              
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">Ku Bar</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 427039</small></h4>
+                                        <div class="clearfix"></div>
+
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Av. San Martín 1053</span></p>                                              
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">Carnicería La Primera</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 421727</small></h4>
+                                        <div class="clearfix"></div>
+
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Mariano Moreno 611</span></p>                                              
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">Carnicería La Vega</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 421029</small></h4>
+                                        <div class="clearfix"></div>
+
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">Molina Campos 156 - Villa Vega San Martín</span></p>                                              
+                                    </td>
+                                </tr>
+
+                                <tr class="comercial-item">
+                                    <td>
+                                        <h4><span class="title">El Novillito Carnicería</span>
+                                        <small class="pull-right nro-tel"><span class="fa fa-phone"></span> 414305</small></h4>
+                                        <div class="clearfix"></div>
+
+                                        <p class="meta"><span class="fa fa-map-marker"></span> &nbsp;<span class="local">3 de caballería 541</span></p>                                              
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                
+                    <ul class="pagination">
+                        <li class="active"><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">&raquo;</a></li>
+                    </ul>
+
+                </div> <!-- /lista-comercial -->
+                    
+            </div>
+        </div>
+    </section>
+
+
+<!-- 
+    <section id="newsletter-in" class="bg-grad-verA05 mt-2 pb-5 bl">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h4 class="h3 nomt">¡ENTERATE ANTES!</h4>
+                    <p class="lead">Suscribite al Newsletter de Cotesma y enterate antes de las novedades</p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Tu email" aria-describedby="suscribir">
+                      <span class="input-group-addon" id="suscribir"><span class="fa fa-paper-plane"></span>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+    </section>
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>COTESMA</h4>
+                    <p>Cooperativa Telefónica y Otros Servicios Públicos de San Martín de los Andes</p>
+                </div>
+                <div class="col-md-2">
+                    <h4>NOSOTROS</h4>
+                    <ul class="nav footer-nav">
+                      <li><a href="nosotros.html">La Cooperativa</a></li>
+                      <li><a href="consejo-adm.html">Consejo de Administración</a></li>
+                      <li><a href="cotesma-en-accion.html">Cotesma En Acción</a></li>
+                      <li><a href="#">Recursos Humanos</a></li>
+                      <li><a href="index.html#rscoop">RSCoop</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>SERVICIOS</h4>
+                    <ul class="nav footer-nav">
+                      <li><a href="telefonia-fija.html">Telefonía Fija</a></li>
+                      <li><a href="http://www.nuestro.com.ar" target="_blank">Telefonía Móvil</a></li>
+                      <li><a href="http://www.cotemax.com.ar" target="_blank">Internet</a></li>
+                      <li><a href="servicios.html">Espacio Educativo</a></li>
+                      <li><a href="servicios.html">Espacio Cultural</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>NOVEDADES</h4>
+                    <ul class="nav footer-nav">
+                      <li><a href="novedades.html">Novedades</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>CONTACTANOS</h4>
+                    <div class="bloqd">
+                        <span><i class="icon grs fa fa-globe"></i>Capitán Drury 761, San Martín de los Andes, NQN 8370 Argentina</span>
+                        <span><i class="icon grs fa fa-phone"></i>02972 427000</span>
+                        <span><i class="icon grs fa fa-envelope"></i><a href="contacto.html"><strong>hola@cotesma.com.ar</strong></a></span>
+                    </div>
+                    <ul class="social-presence">
+                        <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer> -->
+
+    <div class="container-fluid copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <small>&copy; Cotesma 2015</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENLACES A SITIOS WEB DE COTESMA -->
+    <div id="extralinks">
+        <div class="extra cot">
+            <div class="cont">
+                <img class="icono" src="images/logo-cotesma3.png">
+                <div class="txt">
+                    <a href="http://www.cotesma.com.ar" target="_blank"><h5>COTESMA</h5>
+                    <small>Ir al sitio web</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="extra guia">
+            <div class="cont">
+                <img class="icono" src="images/logo-cec3.png">
+                <div class="txt">
+                    <a href="http://www.cotesma.com.ar" target="_blank"><h5>CENTRO DE ESTUDIOS COTESMA</h5>
+                    <small>Ir al sitio web</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="extra cec">
+            <div class="cont">
+                <img class="icono" src="images/logo-cultura3.png">
+                <div class="txt">
+                    <a href="http://www.cotesma.com.ar" target="_blank"><h5>CENTRO CULTURAL COTESMA</h5>
+                    <small>Ir al sitio web</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="extra ccc">
+            <div class="cont">
+                <img class="icono" style="margin-left:-75px;" src="images/logo-cotemax.png">
+                <div class="txt">
+                    <a href="http://www.cotemax.com.ar" target="_blank"><h5>COTEMAX</h5>
+                    <small>Ir al sitio web</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!--  ///// Modal ///// -->
+        <div class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" id="especiales" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title">Servicios especiales incluídos en el Pack Telefónico (*)</h3>
+                    </div>
+
+                    <div class="modal-body">
+                                        
+                                <small>Servicio de despertador, desvío inmediato, desvío por ocupado, desvío por no contesta, desvío ambos desvíos, llame luego por favor, llamada en espera, línea directa, contestador ambos desvíos, contestador por no contesta, autobloqueo total, autobloqueo de celulares, autobloqueo de larga distancia nacional e internacional, autobloqueo de larga distancia internacional, discado abreviado, servicio de conferencia, identificador de llamadas, bloqueo 0609, bloqueo celulares, bloqueo internacional, bloqueo nacional, bloqueo internacional + celulares + 0609, bloqueo total, desvío por cambio de número, llamadas detalladas en factura, figuración WEB, múltiple figuración en guía, no publicar en guía, no recibir llamadas, números permitidos, restricción identificador, sólo recibir llamadas.</small>
+
+                    </div><!--/modal-body -->
+                    <div class="modal-footer">
+                        <small><a data-dismiss="modal">CERRAR</a></small>
+                    </div>
+               </div>
+            </div>
+        </div><!--  ///// fin Modal ///// -->
+
+    <!-- ///////////////////////////////// FIN Page Content ///////////////////////////////// -->
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/dropdowns-enhancement.js"></script>
+
+    <!-- SCROLL UP -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+
+    <!-- SCROLL DOWN -->
+    <script src="js/main.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <script>
+        $(document).on('click', '.panel-heading span.clickable', function (e) {
+            var $this = $(this);
+            if (!$this.hasClass('panel-collapsed')) {
+                $this.parents('.panel').find('.panel-body').slideDown();
+                $this.addClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+            } else {
+                $this.parents('.panel').find('.panel-body').slideUp();
+                $this.removeClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+            }
+        });
+        $(document).on('click', '.panel div.clickable', function (e) {
+            var $this = $(this);
+            if (!$this.hasClass('panel-collapsed')) {
+                $this.parents('.panel').find('.panel-body').slideUp();
+                $this.addClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+            } else {
+                $this.parents('.panel').find('.panel-body').slideDown();
+                $this.removeClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+            }
+        });
+        $(document).ready(function () {
+            $('.panel-heading span.clickable').click();
+            $('.panel div.clickable').click();
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            var activeSystemClass = $('.list-group-item.active');
+
+            //something is entered in search form
+            $('#system-search').keyup( function() {
+               var that = this;
+                // affect all table rows on in systems table
+                var tableBody = $('.table-list-search tbody');
+                var tableRowsClass = $('.table-list-search tbody tr');
+                $('.search-sf').remove();
+                tableRowsClass.each( function(i, val) {
+                
+                    //Lower text for case insensitive
+                    var rowText = $(val).text().toLowerCase();
+                    var inputText = $(that).val().toLowerCase();
+                    if(inputText != '')
+                    {
+                        $('.search-query-sf').remove();
+                    }
+
+                    if( rowText.indexOf( inputText ) == -1 )
+                    {
+                        //hide rows
+                        tableRowsClass.eq(i).hide();
+                        
+                    }
+                    else
+                    {
+                        $('.search-sf').remove();
+                        tableRowsClass.eq(i).show();
+                    }
+                });
+                //all tr elements are hidden
+                if(tableRowsClass.children(':visible').length == 0)
+                {
+                    tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">No entries found.</td></tr>');
+                }
+            });
+        });
+    </script>
+
+    <!-- BLOQUES ANIMADOS -->
+    <script src="js/jquery.inview.js"></script> 
+    <script type="text/javascript">
+      $(function(){
+          $('div.blocks div').inview({
+              'viewFactor': 0.3
+          });
+      });
+    </script>
+
+</body>
+
+</html>
